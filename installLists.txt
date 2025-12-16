@@ -5,4 +5,4 @@ sy_os/lib/text.lua
 sy_os/screen/splashscreen.lua
 sy_os/screen/login.lua
 sy_os/screen/desktop.lua
-sy_os/app/periph.lua
+sy_os/apps/periph.lua
