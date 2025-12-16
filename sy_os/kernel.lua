@@ -1,5 +1,6 @@
 -- Include necessary modules
 os.loadAPI("sy_os/lib/logg.lua")
+os.loadAPI("sy_os/lib/text.lua")
 
 -- Load sy_os module
 os.loadAPI("sy_os/screen/splashscreen.lua")

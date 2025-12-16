@@ -1,6 +1,7 @@
 startup.lua
 sy_os/kernel.lua
 sy_os/lib/logg.lua
+sy_os/lib/text.lua
 sy_os/screen/splashscreen.lua
 sy_os/screen/login.lua
 sy_os/screen/desktop.lua
