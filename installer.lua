@@ -10,7 +10,6 @@ local function logg(message)
 
     print(message)
 
-
     if not fs.exists("sy_tmp") then
         fs.makeDir("sy_tmp")
     end
@@ -21,6 +20,13 @@ local function logg(message)
 end
 
 local function downloadFile(url, path)
+
+    -- Check folder existence and create if necessary
+    local dir = fs.getDir(path)
+    if not fs.exists(dir) then
+        fs.makeDir(dir)
+        logg("Created directory: " .. dir)
+    end
 
     -- Use the http API to get the file content
     local response, err = http.get(url)
