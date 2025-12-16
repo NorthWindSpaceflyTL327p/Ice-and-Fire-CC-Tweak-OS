@@ -5,8 +5,16 @@ function show()
 
     text.centerText("Welcome to CC Tweak OS!")
 
-    term.setCursorPos(2,3)
-    print("Loading...")
+    for j = 1, 3 do
+        for i = 1, 3 do
 
-    sleep(2)
+            -- clear previous loading text
+            text.LB_Text("                           ")
+
+            -- Simulate loading animation
+            text.LB_Text("Loading" .. string.rep(" .", i))
+            sleep(0.2)
+        end
+    end
+
 end

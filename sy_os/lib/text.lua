@@ -8,3 +8,14 @@ function centerText(text)
     term.setCursorPos(startX, startY)
     print(text)
 end
+
+function LB_Text(text)
+    local termWidth, termHeight = term.getSize()
+    local textLength = string.len(text)
+
+    local startX = 2
+    local startY = termHeight - 1
+
+    term.setCursorPos(startX, startY)
+    print(text)
+end
