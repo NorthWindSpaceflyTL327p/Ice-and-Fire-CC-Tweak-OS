@@ -1,3 +1,3 @@
 startup.lua
 sy_os/kernel.lua
-lib/logg.lua
+sy_os/lib/logg.lua
