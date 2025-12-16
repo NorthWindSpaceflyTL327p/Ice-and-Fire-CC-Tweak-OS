@@ -85,3 +85,8 @@ end
 downloadFile(linkBase .. "installLists.txt", "sy_tmp/installLists.txt")
 
 install()
+
+-- Reboot the system to apply changes
+logg("Rebooting system to apply changes...")
+sleep(2)
+os.reboot()
